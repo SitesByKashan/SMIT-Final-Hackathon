@@ -1,0 +1,289 @@
+{
+	"intents": [
+		{
+			"content": [
+				{
+					"message": "Please hold on for one moment while I connect you with the right person."
+				},
+				{
+					"platform": "kommunicate",
+					"metadata": {
+						"KM_ASSIGN_TO": ""
+					}
+				}
+			],
+			"urlPatternList": [],
+			"category": "intent",
+			"name": "Talk to human",
+			"trainingPhrases": [
+				"Talk to human",
+				"Agent",
+				"Help",
+				"Assistance"
+			],
+			"languageCode": "en",
+			"userInformation": ""
+		},
+		{
+			"content": [
+				{
+					"message": "The free trial is for 30 days and after that, you may need to use the paid plans \n\nhttps://www.kommunicate.io/pricing"
+				},
+				{
+					"message": "",
+					"platform": "kommunicate",
+					"metadata": {
+						"contentType": "300",
+						"templateId": "11",
+						"payload": [
+							{
+								"name": "Extend Trial",
+								"action": {
+									"type": "quickReply",
+									"message": "Extend Trial"
+								}
+							}
+						]
+					}
+				}
+			],
+			"urlPatternList": [],
+			"category": "intent",
+			"name": "Trial",
+			"trainingPhrases": [
+				"Trial"
+			],
+			"languageCode": "en",
+			"userInformation": ""
+		},
+		{
+			"content": [
+				{
+					"message": "What brings you here today?"
+				},
+				{
+					"message": "",
+					"platform": "kommunicate",
+					"metadata": {
+						"contentType": "300",
+						"templateId": "11",
+						"payload": [
+							{
+								"name": "Helpcenter",
+								"action": {
+									"type": "quickReply",
+									"message": "Helpcenter"
+								}
+							},
+							{
+								"name": "Trial",
+								"action": {
+									"type": "quickReply",
+									"message": "Trial"
+								}
+							},
+							{
+								"name": "Pricing",
+								"action": {
+									"type": "quickReply",
+									"message": "Pricing"
+								}
+							},
+							{
+								"name": "Get demo",
+								"action": {
+									"type": "quickReply",
+									"message": "Get demo"
+								}
+							}
+						]
+					}
+				}
+			],
+			"urlPatternList": [],
+			"category": "intent",
+			"name": "Product",
+			"trainingPhrases": [
+				"Product"
+			],
+			"languageCode": "en",
+			"userInformation": ""
+		},
+		{
+			"content": [
+				{
+					"message": "Please check the link below for Helpcenter details"
+				},
+				{
+					"message": "",
+					"platform": "kommunicate",
+					"metadata": {
+						"contentType": "300",
+						"templateId": "11",
+						"payload": [
+							{
+								"name": "Helpcenter",
+								"action": {
+									"type": "link",
+									"url": "https://www.kommunicate.io/product/helpcenter"
+								}
+							}
+						]
+					}
+				}
+			],
+			"urlPatternList": [],
+			"category": "intent",
+			"name": "Helpcenter",
+			"trainingPhrases": [
+				"Helpcenter"
+			],
+			"languageCode": "en",
+			"userInformation": ""
+		},
+		{
+			"content": [
+				{
+					"message": "Please check our pricing page for more details"
+				},
+				{
+					"message": "",
+					"platform": "kommunicate",
+					"metadata": {
+						"contentType": "300",
+						"templateId": "11",
+						"payload": [
+							{
+								"name": "Pricing",
+								"action": {
+									"type": "link",
+									"url": "https://www.kommunicate.io/pricing"
+								}
+							}
+						]
+					}
+				}
+			],
+			"urlPatternList": [],
+			"category": "intent",
+			"name": "Pricing",
+			"trainingPhrases": [
+				"Pricing"
+			],
+			"languageCode": "en",
+			"userInformation": ""
+		},
+		{
+			"content": [
+				{
+					"message": "Please click on the link provided and book a slot for a demo session\n\nhttps://calendly.com/kommunicate/15min"
+				}
+			],
+			"urlPatternList": [],
+			"category": "intent",
+			"name": "Demo",
+			"trainingPhrases": [
+				"Demo",
+				"Get demo"
+			],
+			"languageCode": "en",
+			"userInformation": ""
+		},
+		{
+			"content": [
+				{
+					"message": "Please wait a moment. I'm forwarding this to my human colleague to extend the trial for you."
+				},
+				{
+					"platform": "kommunicate",
+					"metadata": {
+						"KM_ASSIGN_TO": ""
+					}
+				}
+			],
+			"urlPatternList": [],
+			"category": "intent",
+			"name": "Extend Trial",
+			"trainingPhrases": [
+				"Extend trial"
+			],
+			"languageCode": "en",
+			"userInformation": ""
+		},
+		{
+			"content": [
+				{
+					"message": "Please let me know, how I can help you?"
+				}
+			],
+			"urlPatternList": [],
+			"category": "intent",
+			"name": "Support",
+			"trainingPhrases": [
+				"support"
+			],
+			"languageCode": "en",
+			"userInformation": ""
+		},
+		{
+			"content": [
+				{
+					"message": "I am not sure how to answer this. I will connect you to a human agent to help you with your query."
+				},
+				{
+					"platform": "kommunicate",
+					"metadata": {
+						"KM_ASSIGN_TO": ""
+					}
+				}
+			],
+			"urlPatternList": [],
+			"category": "fallback_intent",
+			"name": "Default Fallback Intent",
+			"trainingPhrases": [],
+			"languageCode": "en",
+			"userInformation": ""
+		},
+		{
+			"content": [
+				{
+					"message": "https://calendly.com/kommunicate/support"
+				}
+			],
+			"urlPatternList": [],
+			"category": "intent",
+			"name": "Book a Meeting",
+			"trainingPhrases": [
+				"Book a Meeting"
+			],
+			"languageCode": "en",
+			"userInformation": ""
+		},
+		{
+			"content": [
+				{
+					"message": "Hello! Welcome, and thank you for visiting our site."
+				},
+				{
+					"message": "How may I help you?"
+				}
+			],
+			"urlPatternList": [],
+			"category": "welcome_event",
+			"name": "Default Welcome Intent",
+			"trainingPhrases": [
+				"say about you",
+				"Sales"
+			],
+			"webhookKey": "",
+			"functionKey": "",
+			"languageCode": "en",
+			"userInformation": ""
+		}
+	],
+	"webhooks": {},
+	"languageCodes": [
+		"en"
+	],
+	"functions": {}
+}
